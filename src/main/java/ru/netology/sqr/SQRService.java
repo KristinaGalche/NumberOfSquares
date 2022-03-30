@@ -2,7 +2,7 @@ package ru.netology.sqr;
 
 public class SQRService {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         int lowerLimit = 200;
         int upperLimit = 500;
 
