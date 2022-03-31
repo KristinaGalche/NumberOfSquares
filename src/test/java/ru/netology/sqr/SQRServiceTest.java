@@ -8,12 +8,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SQRServiceTest {
     @ParameterizedTest
-    @CsvSource(value = {"200, 500", "0, 99", "501, 10000"})
-    void shouldCalculateNumberSqr(int lowerLimit, int upperLimit) {
+    @CsvSource(value = {"200, 500, 8", "0, 99, 0", "501, 10000, 77"})
+    void shouldCalculateNumberSqr(int lowerLimit, int upperLimit, int count) {
         SQRService service = new SQRService();
         int actual = service.calculateNumberSqr(lowerLimit, upperLimit);
-        int expected = 8;
-        assertEquals(expected, actual);
+
+        assertEquals(count, actual);
     }
 
 //    @Test
